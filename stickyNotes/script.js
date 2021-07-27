@@ -29,4 +29,11 @@ function rotate(){
     return random_rotate[Math.floor(Math.random() * random_rotate.length)];
 }
 // ========================================================================
-function color(){}
+function color(){
+    var random_color = ["#C2ff3d", "#ff3de8", "#3dc2ff", "#04e022", "#bc83e6", "#ebb328"];
+
+    if(i > random_color.length - 1){
+        i = 0;
+    }
+    return random_color[i++];
+}
