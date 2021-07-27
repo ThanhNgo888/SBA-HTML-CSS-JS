@@ -22,7 +22,7 @@ body{
     margin-left: 5%;
 }
 .container3{
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 26%;
     left: 40%;
@@ -43,7 +43,7 @@ svg{
     right: 17%;
     top: 4%;
 }
-#X-icon{
+#x-icon{
     position: absolute;
     right: 5%;
     top: 4%;
