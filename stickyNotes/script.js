@@ -6,7 +6,7 @@ var xIcon = document.getElementById("x-icon");
 
 //creating variable
 var i = 0;
-
+// ========================================================================
 //add event listener to the icons
 xIcon.addEventListener("click", function(){
     typeNote();
@@ -14,13 +14,19 @@ xIcon.addEventListener("click", function(){
 checkIcon.addEventListener("click", function(){
     createNote();
 })
-
+// ========================================================================
 //creating functions
 function typeNote(){}
 function createNote(){}
+// ========================================================================
 function margin(){
     var random_margin = ["-5px", "1px", "5px", "10px", "15px", "20px"];
     return random_margin[Math.floor(Math.random) * random_margin.length];
 }
-function rotate(){}
+// ========================================================================
+function rotate(){
+    var random_rotate = ["rotate(3deg", "rotate(1deg)", "rotate(-1deg)", "rotate(-3deg)", "rotate(-5deg)", "rotate(-10deg)"];
+    return random_rotate[Math.floor(Math.random() * random_rotate.length)];
+}
+// ========================================================================
 function color(){}
