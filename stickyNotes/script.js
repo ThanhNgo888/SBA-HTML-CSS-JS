@@ -18,6 +18,9 @@ checkIcon.addEventListener("click", function(){
 //creating functions
 function typeNote(){}
 function createNote(){}
-function margin(){}
+function margin(){
+    var random_margin = ["-5px", "1px", "5px", "10px", "15px", "20px"];
+    return random_margin[Math.floor(Math.random) * random_margin.length];
+}
 function rotate(){}
 function color(){}
