@@ -14,3 +14,10 @@ xIcon.addEventListener("click", function(){
 checkIcon.addEventListener("click", function(){
     createNote();
 })
+
+//creating functions
+function typeNote(){}
+function createNote(){}
+function margin(){}
+function rotate(){}
+function color(){}
