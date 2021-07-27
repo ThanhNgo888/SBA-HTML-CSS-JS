@@ -7,6 +7,13 @@
     <title>Login page</title>
 
     <style type="text/css">
+        body{
+            background-color: lightblue;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+
+        }
         .login-page{
             width: 360px;
             padding: 10% 0 0;
@@ -15,7 +22,7 @@
         .form{
             position: relative;
             z-index: 1;
-            background: #fff;
+            background: rgba(43, 71, 197, 0.8);
             max-width: 360px;
             margin: 0 auto 100px;
             padding: 45px;
@@ -32,9 +39,35 @@
             box-sizing: border-box;
             font-size: 14px;
         }
+        .form button{
+            font-family: "Roboto", sans-serif;
+            text-transform: uppercase;
+            outline: 0;
+            background: #4caf50;
+            border: 0;
+            padding: 15px;
+            color: #ffffff;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .form button:hover, .form button:active{
+            background: #43a047;
+        }
+        .form .message{
+            margin: 15px 0 0;
+            color: aliceblue;
+            font-size: 12px;
+        }
+        .form .message a{
+            color: #4caf50;
+            text-decoration: none;
+        }
+        .form .register-form{
+            display: none;
+        }
     </style>
 </head>
-<body style="background-color: lightblue; height: 100vh; background-size: cover; background-position: center;">
+<body style="background-color: lightblue;">
     <div class="login-page">
         <div class="form">
             <form class="register-form">
@@ -42,12 +75,25 @@
                 <input type="text" placeholder="password">
                 <input type="text" placeholder="email id">
                 <button>Create</button>
+                <p class="message">Already Registered? <a href="#">Login</a></p>
+            </form>
+            <!-- Login Form -->
+            <form class="login-form">
+                <input type="text" placeholder="user name">
+                <input type="password" placeholder="password">
+                <button>Login</button>
+                <p class="message">Not Registered? <a href="#">Register</a></p>
             </form>
         </div>
     </div>
 </body>
 
+<!-- Writing jQuery script -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
-    
+    $('.message a').click(function(){
+        $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+    });
 </script>
 </html>
