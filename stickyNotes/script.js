@@ -15,8 +15,15 @@ checkIcon.addEventListener("click", function(){
     createNote();
 })
 // ========================================================================
-//creating functions
-function typeNote(){}
+//this function will be activated when we click on "Create Note"
+function typeNote(){
+    if(container3.style.display == "none"){
+        container3.style.display = "block";
+    }else{
+        container3.style.display = "none";
+    }
+}
+// ========================================================================
 function createNote(){}
 // ========================================================================
 function margin(){
